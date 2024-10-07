@@ -1,2 +1,2 @@
 # java-poo
- curso de java orientado a objetos
+ Curso de JAVA Orientado a Objetos
