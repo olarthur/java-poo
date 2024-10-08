@@ -7,18 +7,16 @@ public class Conta {
     private boolean status;
 
     public Conta(int nc, String t, String d, float s) {
-        this.numConta = nc;
-        this.tipo = t;
-        this.dono = d;
-        this.saldo = s;
-        this.abrir();
+        this.saldo = 0;
+        this.status = false;
     }
 
-    public void abrir() {
-        this.status = true;
+    public void abrirConta(String t) {
+        setTipo(t);
+        setStatus(true);
     }
 
-    public void fechar() {
+    public void fecharConta() {
         this.status = false;
     }
 
@@ -34,42 +32,47 @@ public class Conta {
 
     }
 
-    public int getNumConta() {
-        return this.numConta;
-    }
     public void setNumConta(int nc) {
         this.numConta = nc;
     }
-
-    public String getTipo() {
-        return this.tipo;
+    public int getNumConta() {
+        return this.numConta;
     }
+    
     public void setTipo(String t) {
         this.tipo = t;
     }
-
-    public String getDono() {
-        return this.dono;
+    public String getTipo() {
+        return this.tipo;
     }
+
     public void setDono(String d) {
         this.dono = d;
     }
-
-    public float getSaldo() {
-        return this.saldo;
+    public String getDono() {
+        return this.dono;
     }
+
     public void setSaldo(float s) {
         this.saldo = s;
     }
+    public float getSaldo() {
+        return this.saldo;
+    }
 
+    public void setStatus(Boolean s) {
+        this.status = s;
+    }
+    public Boolean getStatus() {
+        return this.status;
+    }
 
     public void mostrar() {
         System.out.println("CONTA CORRENTE:");
-        System.out.println("Numero da Conta: " + this.numConta);
-        System.out.println("Tipo da Conta: " + this.tipo);
-        System.out.println("Dono: " + this.dono);
-        System.out.println("Saldo da Conta e: " + this.saldo);
+        System.out.println("Numero da Conta: " + this.getNumConta());
+        System.out.println("Tipo da Conta: " + this.getTipo());
+        System.out.println("Dono: " + this.getDono());
+        System.out.println("Saldo da Conta e: " + this.getSaldo());
         System.out.println("Status da Conta: " + this.status);
     }
-
 }   
