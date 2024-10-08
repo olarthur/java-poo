@@ -55,11 +55,10 @@ public class Conta {
     }
 
     public void pagarMensal() {
-        float v;
-        if (this.tipo == "CC") {
+        float v = 0;
+        if (this.tipo.equals("CC") ) {
             v = 12;
-        }
-        if (this.tipo == "CP") {
+        } else if (this.tipo.equals("CP") ) {
             v = 20;
         }
         if (this.status == true) {
@@ -68,9 +67,8 @@ public class Conta {
             } else {
                 System.out.println("Saldo insuficiente");
             }
-        else {
+        } else {
             System.out.println("Impossivel pagar");
-        }
         }
     }
 
