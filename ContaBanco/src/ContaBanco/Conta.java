@@ -14,22 +14,64 @@ public class Conta {
     public void abrirConta(String t) {
         setTipo(t);
         setStatus(true);
+        if(t == "CC") {
+            this.saldo = 50;
+        }
+        if (t == "CP") {
+            this.saldo = 150;
+        }
     }
 
     public void fecharConta() {
-        this.status = false;
+        if (this.saldo > 0) {
+            System.out.println("Conta possui saldo, nao e possivel fechar");
+        }
+        if (this.saldo < 0) {
+            System.out.println("Conta em debito, nao e possivel fechar");
+        } 
+        else {
+            setStatus(false);
+        }
     }
 
-    public void depositar() {
-
+    public void depositar(float v) {
+        if (this.status == true) {
+            setSaldo(getSaldo() + v);
+        } else {
+            System.out.println("Impossivel depositar");
+        }
     }
 
-    public void sacar() {
-
+    public void sacar(float v) {
+        if (getStatus() == true) {
+            if (getSaldo() > v) {
+                setSaldo(getSaldo() - v);
+            } else {
+               System.out.println("Saldo insuficiente"); 
+            }
+        } else {
+            System.out.println("Impossivel sacar");
+        }
     }
 
     public void pagarMensal() {
-
+        float v;
+        if (this.tipo == "CC") {
+            v = 12;
+        }
+        if (this.tipo == "CP") {
+            v = 20;
+        }
+        if (this.status == true) {
+            if (this.saldo > v){
+                setSaldo(getSaldo() - v);
+            } else {
+                System.out.println("Saldo insuficiente");
+            }
+        else {
+            System.out.println("Impossivel pagar");
+        }
+        }
     }
 
     public void setNumConta(int nc) {
