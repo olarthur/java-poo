@@ -36,35 +36,37 @@ public class ContaBanco {
     }
 
     public void depositar(float v) {
-        if (this.status == true) {
-            setSaldo(getSaldo() + v);
+        if (this.getStatus()) {
+            this.setSaldo(this.getSaldo() + v);
+            System.out.println("Deposito realizado na conta " + this.getDono());
         } else {
             System.out.println("Impossivel depositar");
         }
     }
 
     public void sacar(float v) {
-        if (getStatus() == true) {
-            if (getSaldo() > v) {
-                setSaldo(getSaldo() - v);
+        if (this.getStatus()) {
+            if (this.getSaldo() >= v) {
+                this.setSaldo(this.getSaldo() - v);
+                System.out.println("Saque realizado na conta de " + this.getDono());
             } else {
                System.out.println("Saldo insuficiente"); 
             }
         } else {
-            System.out.println("Impossivel sacar");
+            System.out.println("Impossivel sacar, conta inesistente");
         }
     }
 
     public void pagarMensal() {
-        float v = 0;
-        if (this.tipo.equals("CC") ) {
+        int v = 0;
+        if (this.getTipo().equals("CC") ) {
             v = 12;
-        } else if (this.tipo.equals("CP") ) {
+        } else if (this.getTipo().equals("CP") ) {
             v = 20;
         }
-        if (this.status == true) {
-            if (this.saldo > v){
-                setSaldo(getSaldo() - v);
+        if (this.getStatus()) {
+            if (this.getSaldo() > v){
+                this.setSaldo(this.getSaldo() - v);
             } else {
                 System.out.println("Saldo insuficiente");
             }
@@ -111,9 +113,9 @@ public class ContaBanco {
     public void mostrar() {
         System.out.println("CONTA CORRENTE:");
         System.out.println("Numero da Conta: " + this.getNumConta());
-        System.out.println("Tipo da Conta: " + this.getTipo());
         System.out.println("Dono: " + this.getDono());
+        System.out.println("Tipo da Conta: " + this.getTipo());
         System.out.println("Saldo da Conta e: " + this.getSaldo());
-        System.out.println("Status da Conta: " + this.status);
+        System.out.println("Status da Conta: " + this.getStatus());
     }
 }   
