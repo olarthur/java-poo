@@ -37,12 +37,31 @@ public class Conta {
     public int getNumConta() {
         return this.numConta;
     }
-
     public void setNumConta(int nc) {
         this.numConta = nc;
     }
 
-    
+    public String getTipo() {
+        return this.tipo;
+    }
+    public void setTipo(String t) {
+        this.tipo = t;
+    }
+
+    public String getDono() {
+        return this.dono;
+    }
+    public void setDono(String d) {
+        this.dono = d;
+    }
+
+    public float getSaldo() {
+        return this.saldo;
+    }
+    public void setSaldo(float s) {
+        this.saldo = s;
+    }
+
 
     public void mostrar() {
         System.out.println("CONTA CORRENTE:");
