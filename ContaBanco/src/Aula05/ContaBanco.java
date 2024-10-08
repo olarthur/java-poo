@@ -25,8 +25,7 @@ public class ContaBanco {
     public void fecharConta() {
         if (this.getSaldo() > 0) {
             System.out.println("Conta possui saldo, nao e possivel fechar");
-        }
-        if (this.getSaldo() < 0) {
+        } else if (this.getSaldo() < 0) {
             System.out.println("Conta em debito, nao e possivel fechar");
         } 
         else {
@@ -65,11 +64,7 @@ public class ContaBanco {
             v = 20;
         }
         if (this.getStatus()) {
-            if (this.getSaldo() > v){
                 this.setSaldo(this.getSaldo() - v);
-            } else {
-                System.out.println("Saldo insuficiente");
-            }
         } else {
             System.out.println("Impossivel pagar");
         }
@@ -111,7 +106,8 @@ public class ContaBanco {
     }
 
     public void mostrar() {
-        System.out.println("CONTA CORRENTE:");
+        System.out.println("-_-_-_-_-_-_-_-_-_-_-_-_-");
+        System.out.println("CONTA " + getTipo());
         System.out.println("Numero da Conta: " + this.getNumConta());
         System.out.println("Dono: " + this.getDono());
         System.out.println("Tipo da Conta: " + this.getTipo());
