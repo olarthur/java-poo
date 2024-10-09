@@ -1,6 +1,7 @@
 package Aula06;
-public class ControleRemoto {
+public class Controle{
     public static void main(String[] args) throws Exception {
+
         
     }
 }
