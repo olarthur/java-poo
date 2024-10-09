@@ -1,9 +1,7 @@
 package Aula06;
 public class ControleRemoto implements Controlador{
     private int volume;
-    private boolean ligado;
-    private boolean tocando;
-    
+    private boolean ligado, tocando;
     
     public ControleRemoto() {
         this.volume = 50;

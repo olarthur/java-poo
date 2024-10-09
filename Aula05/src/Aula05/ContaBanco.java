@@ -1,8 +1,7 @@
 package Aula05;
 public class ContaBanco {
     public int numConta;
-    protected String tipo;
-    private String dono;
+    protected String tipo, dono;
     private float saldo;
     private boolean status;
 

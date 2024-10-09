@@ -1,8 +1,7 @@
 package Aula04;
 public class Caneta {
-    public String modelo;
+    public String modelo, cor;
     private float ponta;
-    private String cor;
     private boolean tampada;
 
     public Caneta(String m, String c, float p) { // Método CONSTRUCT
