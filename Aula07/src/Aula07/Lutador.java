@@ -1,6 +1,6 @@
 package Aula07;
 
-public class Lutador {
+public class Lutador implements Painel{
     
     private String nome;
     private String nacionalidade;
@@ -74,7 +74,30 @@ public class Lutador {
     public void setEmpates(int e) {
         this.empates = e;
     }
-
-
+    @Override
+    public void apresentar() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'apresentar'");
+    }
+    @Override
+    public void status() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'status'");
+    }
+    @Override
+    public void ganharLuta() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'ganharLuta'");
+    }
+    @Override
+    public void perderLuta() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'perderLuta'");
+    }
+    @Override
+    public void empatarLuta() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'empatarLuta'");
+    }
 }
 
