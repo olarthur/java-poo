@@ -34,32 +34,41 @@ public class ControleRemoto implements Controlador{
 
     @Override
     public void ligar() {
-        
+        this.setLigado(true);
     }
 
     @Override
     public void desligar() {
-        
+        this.setLigado(false);
     }
 
     @Override
     public void abrirMenu() {
-        
+        System.out.println("Esta ligado? " + this.getLigado());
+        System.out.println("Esta tocando? " + this.getTocando());
+        System.out.println("Volume: " + this.getVolume());
+        for (int i = 0; i <= this.getVolume(); i+=10) {
+            System.out.println("|");
+        }
     }
 
     @Override
     public void fecharMenu() {
-        
+        System.out.println("Fechando Menu...");
     }
 
     @Override
     public void maisVolume() {
-       
+       if (this.getLigado()) {
+            this.setVolume(this.getVolume() + 1);
+       }
     }
 
     @Override
     public void menosVolume() {
-        
+        if (this.getLigado()) {
+            this.setVolume(this.getVolume() - 1);
+        } 
     }
 
     @Override
