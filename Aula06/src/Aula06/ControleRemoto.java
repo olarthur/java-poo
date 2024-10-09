@@ -11,24 +11,24 @@ public class ControleRemoto implements Controlador{
         this.tocando = false;
     }
 
-    public int getVolume() {
+    private int getVolume() {
         return volume;
     }
-    public void setVolume(int v) {
+    private void setVolume(int v) {
         this.volume = v;
     }
 
-    public boolean getLigado() {
+    private boolean getLigado() {
         return ligado;
     }
-    public void setLigado(boolean l) {
+    private void setLigado(boolean l) {
         this.ligado = l;
     }
     
-    public boolean getTocando() {
+    private boolean getTocando() {
         return tocando;
     }
-    public void setTocando(boolean t) {
+    private void setTocando(boolean t) {
         this.tocando = t;
     }
 
@@ -46,9 +46,9 @@ public class ControleRemoto implements Controlador{
     public void abrirMenu() {
         System.out.println("Esta ligado? " + this.getLigado());
         System.out.println("Esta tocando? " + this.getTocando());
-        System.out.println("Volume: " + this.getVolume());
+        System.out.print("Volume: " + this.getVolume());
         for (int i = 0; i <= this.getVolume(); i+=10) {
-            System.out.println("|");
+            System.out.print("|");
         }
     }
 
