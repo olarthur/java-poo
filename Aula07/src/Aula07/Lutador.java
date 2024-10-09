@@ -1,36 +1,16 @@
 package Aula07;
 
-public class Exemplo {
+public class Lutador {
     
     private String nome;
     private String nacionalidade;
     private int idade;
     private float altura;
     private float peso;
-    private char categoria;
+    private String categoria;
     private int vitorias;
     private int derrotas;
     private int empates;
-
-    public void apresentar() {
-
-    }
-
-    public void status() {
-
-    }
-
-    public void ganharLuta() {
-
-    }
-
-    public void perderLuta() {
-
-    }
-
-    public void empatarLuta() {
-        
-    }
 
     public String getNome() {
         return nome;
@@ -67,10 +47,10 @@ public class Exemplo {
         this.peso = p;
     }
 
-    public char getCategoria() {
+    public String getCategoria() {
         return categoria;
     }
-    public void setCategoria(char c) {
+    public void setCategoria(String c) {
         this.categoria = c;
     }
 
