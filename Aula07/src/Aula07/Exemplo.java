@@ -32,66 +32,66 @@ public class Exemplo {
         
     }
 
-    private String getNome() {
+    public String getNome() {
         return nome;
     }
-    private void setNome(String n) {
+    public void setNome(String n) {
         this.nome = n;
     }
 
-    private String getNacionalidade() {
+    public String getNacionalidade() {
         return nacionalidade;
     }
-    private void setNacionalidade(String nc) {
+    public void setNacionalidade(String nc) {
         this.nacionalidade = nc;
     }
 
-    private int getIdade() {
+    public int getIdade() {
         return idade;
     }
-    private void setIdade(int i) {
+    public void setIdade(int i) {
         this.idade = i;
     }
 
-    private float getAltura() {
+    public float getAltura() {
         return altura;
     }
-    private void setAltura(float a) {
+    public void setAltura(float a) {
         this.altura = a;
     }
 
-    private float getPeso() {
+    public float getPeso() {
         return peso;
     }
-    private void setPeso(float p) {
+    public void setPeso(float p) {
         this.peso = p;
     }
 
-    private char getCategoria() {
+    public char getCategoria() {
         return categoria;
     }
-    private void setCategoria(char c) {
+    public void setCategoria(char c) {
         this.categoria = c;
     }
 
-    private int getVitorias() {
+    public int getVitorias() {
         return vitorias;
     }
-    private void setVitorias(int v) {
+    public void setVitorias(int v) {
         this.vitorias = v;
     }
 
-    private int getDerrotas() {
+    public int getDerrotas() {
         return derrotas;
     }
-    private void setDerrotas(int d) {
+    public void setDerrotas(int d) {
         this.derrotas = d;
     }
 
-    private int getEmpates() {
+    public int getEmpates() {
         return empates;
     }
-    private void setEmpates(int e) {
+    public void setEmpates(int e) {
         this.empates = e;
     }
 
