@@ -53,8 +53,46 @@ public class Exemplo {
         this.idade = i;
     }
 
+    private float getAltura() {
+        return altura;
+    }
+    private void setAltura(float a) {
+        this.altura = a;
+    }
+
     private float getPeso() {
         return peso;
+    }
+    private void setPeso(float p) {
+        this.peso = p;
+    }
+
+    private char getCategoria() {
+        return categoria;
+    }
+    private void setCategoria(char c) {
+        this.categoria = c;
+    }
+
+    private int getVitorias() {
+        return vitorias;
+    }
+    private void setVitorias(int v) {
+        this.vitorias = v;
+    }
+
+    private int getDerrotas() {
+        return derrotas;
+    }
+    private void setDerrotas(int d) {
+        this.derrotas = d;
+    }
+
+    private int getEmpates() {
+        return empates;
+    }
+    private void setEmpates(int e) {
+        this.empates = e;
     }
 
 
