@@ -8,13 +8,40 @@ public class Lutador implements Painel{
     private float altura;
     private float peso;
     private String categoria;
-    private int vitorias;
-    private int derrotas;
-    private int empates;
+    private int vitorias, derrotas, empates;
+    
 
-    public Lutador() {
-        
+    public Lutador(String no, String na, int id, float al, float pe, int vi, int de, int em) {
+        this.nome = no;
+        this.nacionalidade = na;
+        this.idade = id;
+        this.altura = al;
+        this.peso = pe;
+        this.vitorias = vi;
+        this.derrotas = de;
+        this.empates = em;
     }
+
+    public void apresentar() {
+
+    }
+
+    public void status() {
+
+    }
+
+    public void ganharLuta() {
+
+    } 
+
+    public void perderLuta() {
+
+    }
+
+    public void empatarLuta() {
+
+    }
+
 
     public String getNome() {
         return nome;
@@ -52,17 +79,17 @@ public class Lutador implements Painel{
         setCategoria();
     }
 
-    private void setCategoria(String) {
+    private void setCategoria() {
         if (getPeso() < 52.2) {
-            System.out.println("Invalido");
+            this.categoria = ("Invalido");
         } else if (getPeso() <= 70.3) {
-            setCategoria("Leve");
+            this.categoria = ("Leve");
         } else if (getPeso() <= 83.9) {
-            setCategoria("Medio");
+            this.categoria = ("Medio");
         } else if (getPeso() <= 120.2) {
-            setCategoria("Pesado");
+            this.categoria = ("Pesado");
         } else {
-            setCategoria("Invalido");
+            this.categoria = ("Invalido");
         }
     }
 
@@ -87,37 +114,5 @@ public class Lutador implements Painel{
         this.empates = em;
     }
 
-
-    @Override
-    public void apresentar() {
-        System.out.printf("Lutador: ", getNome());
-        System.out.printf("Origem: ", getNacionalidade());
-        System.out.println(getIdade(), " anos");
-        System.out.println(getAltura(), " m de altura");
-        System.out.printf("Pesando ", getPeso(), "Kg");
-        System.out.printf("Ganhou: ", getVitorias());
-        System.out.printf("Perdeu: ", getDerrotas());
-        System.out.printf("Empatou: ", getEmpates());
-    }
-    @Override
-    public void status() {
-        System.out.println(getNome());
-        System.out.println("e um peso ", getCategoria());
-        System.out.println(getVitorias(), "vitorias");
-        System.out.println(getDerrotas(), "derrotas");
-        System.out.println(getEmpates(), "empates");
-    }
-    @Override
-    public void ganharLuta() {
-        setVitorias(getVitorias() + 1);
-    }
-    @Override
-    public void perderLuta() {
-        setDerrotas(getDerrotas() + 1);
-    }
-    @Override
-    public void empatarLuta() {
-        setEmpates(getEmpates() + 1);
-    }
 }
 
