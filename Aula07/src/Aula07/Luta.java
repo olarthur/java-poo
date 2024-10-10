@@ -1,4 +1,5 @@
 package Aula07;
+import java.util.Random;
 
 public class Luta {
     
@@ -26,6 +27,29 @@ public class Luta {
             this.desafiado.apresentar();
             System.out.println("#### DESAFIANTE ####");
             this.desafiante.apresentar();
+
+            Random aleatorio = new Random();
+            int vencedor = aleatorio.nextInt(3);
+
+            switch (vencedor) {
+                case 0:
+                    System.out.println("Empatou!");
+                    this.desafiado.empatarLuta();
+                    this.desafiante.empatarLuta();
+                    break;
+                case 1:
+                    System.out.println("Venceu" + this.desafiado.getNome());
+                    this.desafiado.ganharLuta();
+                    this.desafiante.perderLuta();
+                    break;
+                case 2:
+                    System.out.println("Venceu" + this.desafiante.getNome());
+                    this.desafiado.perderLuta();
+                    this.desafiante.ganharLuta();
+                    break;
+                default:
+                    break;
+            }
 
         } else {
             System.out.println("A luta nao pode acontecer!");
