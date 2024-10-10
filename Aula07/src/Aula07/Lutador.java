@@ -23,23 +23,29 @@ public class Lutador implements Painel{
     }
 
     public void apresentar() {
-
+        System.out.println("CHEGOU A HORA: Apresentamos o lutador " + this.getNome());
+        System.out.println("Diretamente de " + this.getNacionalidade());
+        System.out.println("com " + this.getIdade() + " anos e " + this.getAltura());
+        System.out.println("pesando " + this.getPeso() + "Kg");
+        System.out.println(this.getVitorias() + " vitorias");
+        System.out.println(this.getDerrotas() + " derrotas");
+        System.out.println(this.getEmpates() + " empates");
     }
 
     public void status() {
-
+        System.out.println(this.getNome() + " e um peso " + this.getCategoria());
     }
 
     public void ganharLuta() {
-
+        this.setVitorias(getVitorias() + 1);
     } 
 
     public void perderLuta() {
-
+        this.setDerrotas(this.getDerrotas() + 1);
     }
 
     public void empatarLuta() {
-
+        this.setEmpates(this.getEmpates() + 1);
     }
 
 
@@ -77,6 +83,10 @@ public class Lutador implements Painel{
     public void setPeso(float pe) {
         this.peso = pe;
         setCategoria();
+    }
+
+    private String getCategoria() {
+        return categoria;
     }
 
     private void setCategoria() {
