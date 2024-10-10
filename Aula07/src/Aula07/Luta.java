@@ -8,12 +8,28 @@ public class Luta {
     private boolean aprovada;
     
 
-    public void marcarLuta() {
-    
+    public void marcarLuta(Lutador l1, Lutador l2) {
+        if (l1.getCategoria().equals(l2.getCategoria()) && l1 != l2) {
+            this.aprovada = true;
+            this.desafiado = l1;
+            this.desafiante = l2;
+        } else {
+            this.aprovada = false;
+            this.desafiado = null;
+            this.desafiante = null;
+        }
     }
     
     public void lutar() {
-    
+        if (this.aprovada) {
+            System.out.println("#### DESAFIADO ####");
+            this.desafiado.apresentar();
+            System.out.println("#### DESAFIANTE ####");
+            this.desafiante.apresentar();
+
+        } else {
+            System.out.println("A luta nao pode acontecer!");
+        }
     }
 
     public Lutador getDesafiado() {

@@ -89,7 +89,7 @@ public class Lutador {
         setCategoria();
     }
 
-    private String getCategoria() {
+    String getCategoria() {
         return categoria;
     }
 
