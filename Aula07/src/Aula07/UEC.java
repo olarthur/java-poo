@@ -15,12 +15,7 @@ public class UEC {
 
         l[5] = new Lutador("Shin", "Japanese", 24, 1.81f, 105.7f, 15, 4, 3);
 
-        l[0].apresentar();
-        l[1].apresentar();
-        l[2].apresentar();
-        l[3].apresentar();
-        l[4].apresentar();
-        l[5].apresentar();   
+        
         
     }
 }
