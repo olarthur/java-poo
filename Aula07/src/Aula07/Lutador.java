@@ -12,70 +12,82 @@ public class Lutador implements Painel{
     private int derrotas;
     private int empates;
 
+    public Lutador() {
+        
+    }
+
     public String getNome() {
         return nome;
     }
-    public void setNome(String n) {
-        this.nome = n;
+    public void setNome(String no) {
+        this.nome = no;
     }
 
     public String getNacionalidade() {
         return nacionalidade;
     }
-    public void setNacionalidade(String nc) {
-        this.nacionalidade = nc;
+    public void setNacionalidade(String na) {
+        this.nacionalidade = na;
     }
 
     public int getIdade() {
         return idade;
     }
-    public void setIdade(int i) {
-        this.idade = i;
+    public void setIdade(int id) {
+        this.idade = id;
     }
 
     public float getAltura() {
         return altura;
     }
-    public void setAltura(float a) {
-        this.altura = a;
+    public void setAltura(float al) {
+        this.altura = al;
     }
 
     public float getPeso() {
         return peso;
     }
-    public void setPeso(float p) {
-        this.peso = p;
+    public void setPeso(float pe) {
+        this.peso = pe;
+        setCategoria();
     }
 
-    public String getCategoria() {
-        return categoria;
-    }
-    public void setCategoria(String c) {
-        this.categoria = c;
+    private void setCategoria(String) {
+        if (getPeso() < 52.2) {
+            System.out.println("Invalido");
+        } else if (getPeso() <= 70.3) {
+            setCategoria("Leve");
+        } else if (getPeso() <= 83.9) {
+            setCategoria("Medio");
+        } else if (getPeso() <= 120.2) {
+            setCategoria("Pesado");
+        } else {
+            setCategoria("Invalido");
+        }
     }
 
     public int getVitorias() {
         return vitorias;
     }
-    public void setVitorias(int v) {
-        this.vitorias = v;
+    public void setVitorias(int vi) {
+        this.vitorias = vi;
     }
 
     public int getDerrotas() {
         return derrotas;
     }
-    public void setDerrotas(int d) {
-        this.derrotas = d;
+    public void setDerrotas(int de) {
+        this.derrotas = de;
     }
 
     public int getEmpates() {
         return empates;
     }
-    public void setEmpates(int e) {
-        this.empates = e;
+    public void setEmpates(int em) {
+        this.empates = em;
     }
 
-    
+
     @Override
     public void apresentar() {
         
@@ -86,15 +98,15 @@ public class Lutador implements Painel{
     }
     @Override
     public void ganharLuta() {
-        
+        setVitorias(getVitorias() + 1);
     }
     @Override
     public void perderLuta() {
-        
+        setDerrotas(getDerrotas() + 1);
     }
     @Override
     public void empatarLuta() {
-        
+        setEmpates(getEmpates() + 1);
     }
 }
 
