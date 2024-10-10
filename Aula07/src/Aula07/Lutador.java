@@ -90,11 +90,22 @@ public class Lutador implements Painel{
 
     @Override
     public void apresentar() {
-        
+        System.out.printf("Lutador: ", getNome());
+        System.out.printf("Origem: ", getNacionalidade());
+        System.out.println(getIdade(), " anos");
+        System.out.println(getAltura(), " m de altura");
+        System.out.printf("Pesando ", getPeso(), "Kg");
+        System.out.printf("Ganhou: ", getVitorias());
+        System.out.printf("Perdeu: ", getDerrotas());
+        System.out.printf("Empatou: ", getEmpates());
     }
     @Override
     public void status() {
-        
+        System.out.println(getNome());
+        System.out.println("e um peso ", getCategoria());
+        System.out.println(getVitorias(), "vitorias");
+        System.out.println(getDerrotas(), "derrotas");
+        System.out.println(getEmpates(), "empates");
     }
     @Override
     public void ganharLuta() {
