@@ -1,6 +1,6 @@
 package Aula07;
 
-public class Lutador implements Painel{
+public class Lutador {
     
     private String nome;
     private String nacionalidade;
@@ -23,6 +23,7 @@ public class Lutador implements Painel{
     }
 
     public void apresentar() {
+        System.out.println("-----------------------------------------");
         System.out.println("CHEGOU A HORA: Apresentamos o lutador " + this.getNome());
         System.out.println("Diretamente de " + this.getNacionalidade());
         System.out.println("com " + this.getIdade() + " anos e " + this.getAltura());
@@ -34,6 +35,9 @@ public class Lutador implements Painel{
 
     public void status() {
         System.out.println(this.getNome() + " e um peso " + this.getCategoria());
+        System.out.println("Ganhou " + this.getVitorias() + " vezes");
+        System.out.println("Perdeu " + this.getDerrotas() + " vezes");
+        System.out.println("Empatou " + this.getEmpates() + " vezes");
     }
 
     public void ganharLuta() {
