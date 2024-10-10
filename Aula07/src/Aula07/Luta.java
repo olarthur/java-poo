@@ -47,10 +47,7 @@ public class Luta {
                     this.desafiado.perderLuta();
                     this.desafiante.ganharLuta();
                     break;
-                default:
-                    break;
             }
-
         } else {
             System.out.println("A luta nao pode acontecer!");
         }

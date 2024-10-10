@@ -15,7 +15,9 @@ public class UEC {
 
         l[5] = new Lutador("Shin", "Japanese", 24, 1.81f, 105.7f, 15, 4, 3);
 
-        
+        Luta UEC01 = new Luta();
+        UEC01.marcarLuta(l[4], l[5]);
+        UEC01.lutar();
         
     }
 }

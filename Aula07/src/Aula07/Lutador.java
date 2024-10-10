@@ -127,6 +127,5 @@ public class Lutador {
     public void setEmpates(int em) {
         this.empates = em;
     }
-
 }
 
