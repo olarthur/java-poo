@@ -3,8 +3,15 @@ package Aula08;
 public class Pesooa {
     private String nome;
     private int idade;
-    private char sexo;
+    private String sexo;
     
+    public Pesooa(String nome, int idade, String sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+    }
+
+
     public void fazerAniver() {
         this.idade++;
     }
@@ -25,13 +32,12 @@ public class Pesooa {
         this.idade = idade;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
-
 
 }

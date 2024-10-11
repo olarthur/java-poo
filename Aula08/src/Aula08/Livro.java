@@ -13,14 +13,16 @@ public class Livro implements Publicacao{
         this.titulo = titulo;
         this.autor = autor;
         this.totPaginas = totPaginas;
+        this.aberto = false;
+        this.pagAtual = 0;
         this.leitor = leitor;
     }
 
 
-    public void detalhes() {
-        
+    public String detalhes() {
+        return "Livro {titulo =" + titulo + "\n, autor = " + autor + "\n, totPaginas = " + totPaginas + "\n, pagAtual = " + pagAtual
+                + "\n, aberto= " + aberto + "\n, leitor = " + leitor.getNome() + "}";
     }
-    
 
     public String getTitulo() {
         return titulo;
@@ -78,27 +80,27 @@ public class Livro implements Publicacao{
 
     @Override
     public void abrir() {
-        
+        this.aberto = true;
     }
 
     @Override
     public void fechar() {
-        
+        this.aberto = false;
     }
 
     @Override
-    public void folhear() {
-        
+    public void folhear(int p) {
+        this.pagAtual = p;
     }
 
     @Override
     public void avancarPag() {
-        
+        this.pagAtual++;
     }
 
     @Override
     public void voltarPag() {
-        
+        this.pagAtual--;
     }
 
     
