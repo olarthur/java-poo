@@ -6,7 +6,7 @@ public class Pesooa {
     private char sexo;
     
     public void fazerAniver() {
-        
+        this.idade++;
     }
     
     public String getNome() {
