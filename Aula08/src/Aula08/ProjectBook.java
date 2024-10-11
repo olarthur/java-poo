@@ -12,6 +12,8 @@ public class ProjectBook {
         l[1] = new Livro("A Divina Comedia", "Dante Alighieri", 896, p[1]);
         l[2] = new Livro("A Republica", "Platao", 467, p[1]);
 
+        l[0].abrir();
+        l[0].folhear(188);
         System.out.println(l[0].detalhes());
     }
 }
