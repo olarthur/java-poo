@@ -14,6 +14,11 @@ public class ProjectBook {
 
         l[0].abrir();
         l[0].folhear(188);
+        l[0].avancarPag();
+        l[0].fechar();
+        l[0].abrir();
         System.out.println(l[0].detalhes());
+
+        System.out.println(l[1].detalhes());
     }
 }
