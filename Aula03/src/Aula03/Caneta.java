@@ -1,4 +1,5 @@
-package Aula03;
+package aula03;
+
 public class Caneta {
     public String modelo, cor;
     private float ponta;

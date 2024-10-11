@@ -1,4 +1,5 @@
-package Aula05;
+package aula05;
+
 public class Aula05 {
     public static void main(String[] args) throws Exception {
        ContaBanco p1 = new ContaBanco();

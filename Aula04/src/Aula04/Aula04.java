@@ -1,4 +1,5 @@
-package Aula04;
+package aula04;
+
 public class Aula04 {
     public static void main(String[] args) throws Exception {
         Caneta c1 = new Caneta("Faber", "Vermelha", 0.8f);

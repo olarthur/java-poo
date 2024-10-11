@@ -1,4 +1,5 @@
-package Aula06;
+package aula06;
+
 public class Controle{
     public static void main(String[] args) throws Exception {
         ControleRemoto c = new ControleRemoto();
