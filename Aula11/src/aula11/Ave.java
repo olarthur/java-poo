@@ -1,10 +1,10 @@
 package aula11;
 
-public class Ave {
+public class Ave extends Animal{
 
     private String corPena;
 
-    
+
     public void fazerNinho() {
 
     }
