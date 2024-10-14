@@ -6,7 +6,7 @@ public abstract class Pessoa {
     private String sexo;
 
     public final void fazerAni() {
-        
+        this.idade++;
     }
 
 
@@ -33,4 +33,11 @@ public abstract class Pessoa {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
+
+
+    @Override
+    public String toString() {
+        return "Pessoa [nome=" + nome + ", idade=" + idade + ", sexo=" + sexo + "]";
+    }
+    
 }
