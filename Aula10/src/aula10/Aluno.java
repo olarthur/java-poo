@@ -5,7 +5,7 @@ public class Aluno extends Pessoa{
     private String curso;
 
     
-    public void PagarMensalidade() {
+    public void pagarMensalidade() {
         System.out.println("Pagando mensalidade do aluno, " + this.getNome() + ".");
     }
 
