@@ -7,7 +7,7 @@ public class Aluno extends Pessoa{
 
 
     public void cancelatMatr() {
-
+        System.out.println("Matricula sera cancelada!");
     }
 
 

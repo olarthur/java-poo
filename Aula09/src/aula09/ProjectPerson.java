@@ -1,5 +1,5 @@
 package aula09;
-public class App {
+public class ProjectPerson {
     public static void main(String[] args) throws Exception {
         
         Pessoa p1 = new Pessoa();

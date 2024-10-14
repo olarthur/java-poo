@@ -6,7 +6,7 @@ public class Funcionario extends Pessoa{
     private boolean trabalhando;
 
     public void mudarTrabalho() {
-
+        this.trabalhando = ! this.trabalhando;
     }
 
 
