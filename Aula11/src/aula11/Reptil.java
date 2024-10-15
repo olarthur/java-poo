@@ -25,7 +25,7 @@ public class Reptil extends Animal{
 
     @Override
     public void emitirSom() {
-        System.out.println("som de Reptil");
+        System.out.printf("som de Reptil\n");
     }
 
 

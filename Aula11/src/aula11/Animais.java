@@ -1,6 +1,6 @@
 package aula11;
 
-public class App {
+public class Animais {
     public static void main(String[] args) throws Exception {
         
         Mamifero  m = new Mamifero();
@@ -14,6 +14,13 @@ public class App {
         m.locomover();
         m.alimentar();
         m.emitirSom();
+
+        r.setPeso(25f);
+        r.setIdade(3);
+        r.setMembros(4);
+        r.locomover();
+        r.alimentar();
+        r.emitirSom();
 
         p.setPeso(0.50f);
         p.setIdade(1);

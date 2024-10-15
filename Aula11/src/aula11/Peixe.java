@@ -33,6 +33,6 @@ public class Peixe extends Animal{
 
     @Override
     public void emitirSom() {
-        System.out.println("Peixe nao faz som");
+        System.out.printf("Peixe nao faz som\n");
     }
 }
