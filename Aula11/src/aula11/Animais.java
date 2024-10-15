@@ -66,6 +66,13 @@ public class Animais {
         s.locomover();
         s.alimentar();
         s.emitirSom();
+
+        t.setPeso(5.300f);
+        t.setIdade(20);
+        t.setMembros(4);
+        t.locomover();
+        t.alimentar();
+        t.emitirSom();
         
         
     }
