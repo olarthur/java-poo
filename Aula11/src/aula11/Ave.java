@@ -33,7 +33,7 @@ public class Ave extends Animal{
 
     @Override
     public void emitirSom() {
-        System.out.printf("Som de ave\n");
+        System.out.printf("\nSom de ave\n");
     }
 
 }

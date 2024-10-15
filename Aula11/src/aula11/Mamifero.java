@@ -20,7 +20,7 @@ public class Mamifero extends Animal{
 
     @Override
     public void alimentar() {
-        System.out.println("Mamando");
+        System.out.println("\nMamando");
     }
 
     @Override

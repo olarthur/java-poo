@@ -3,10 +3,10 @@ package aula11;
 public class Cachorro extends Mamifero{
 
     public void enterrarOsso() {
-        System.out.println("Enterrando osso");
+        System.out.printf("Enterrando osso");
     }
         
     public void abanarRabo() {
-        System.out.println("Abanando rabo");
+        System.out.printf("Abanando rabo");
     }
 }

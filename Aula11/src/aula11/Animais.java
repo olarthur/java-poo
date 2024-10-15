@@ -7,7 +7,8 @@ public class Animais {
         Reptil  r = new Reptil();
         Peixe p = new Peixe();
         Ave a = new Ave();
-        
+        Canguru c = new Canguru();
+        Cachorro d = new Cachorro();
 
         m.setPeso(85.3f);
         m.setIdade(2);
@@ -38,6 +39,14 @@ public class Animais {
         a.alimentar();
         a.emitirSom();
         a.fazerNinho();
+
+        c.setPeso(55.30f);
+        c.setIdade(3);
+        c.setMembros(4);
+        c.locomover();
+        c.alimentar();
+        c.emitirSom();
+        c.usarBolsa();
 
     }
 }
