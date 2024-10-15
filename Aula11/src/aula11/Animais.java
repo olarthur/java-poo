@@ -81,7 +81,12 @@ public class Animais {
         g.alimentar();
         g.emitirSom();
 
-        
+        ar.setPeso(2.230f);
+        ar.setIdade(3);
+        ar.setMembros(2);
+        ar.locomover();
+        ar.alimentar();
+        ar.emitirSom();
         
         
     }
