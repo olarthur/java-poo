@@ -9,6 +9,10 @@ public class Animais {
         Ave a = new Ave();
         Canguru c = new Canguru();
         Cachorro d = new Cachorro();
+        Cobra s = new Cobra();
+        Tartaruga t = new Tartaruga();
+        Goldfish g = new Goldfish();
+        Arara ar = new Arara();
 
         m.setPeso(85.3f);
         m.setIdade(2);
@@ -55,6 +59,14 @@ public class Animais {
         d.alimentar();
         d.emitirSom();
         d.abanarRabo();
+
+        s.setPeso(3);
+        s.setIdade(2);
+        s.setMembros(0);
+        s.locomover();
+        s.alimentar();
+        s.emitirSom();
+        
         
     }
 }
