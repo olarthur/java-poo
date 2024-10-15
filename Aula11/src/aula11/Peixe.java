@@ -6,7 +6,7 @@ public class Peixe extends Animal{
 
 
     public void soltarBolha() {
-        System.out.println("Soltando bolhas\n");
+        System.out.println("Soltando Bolhas\n");
     }
 
 
@@ -27,7 +27,7 @@ public class Peixe extends Animal{
 
     @Override
     public void alimentar() {
-        System.out.printf("\nComendo substancias");
+        System.out.printf("\nComendo Substancias");
     }
 
 
