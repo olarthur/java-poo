@@ -15,17 +15,17 @@ public class Reptil extends Animal{
 
     @Override
     public void locomover() {
-        System.out.println("Rastejando");
+        System.out.printf("\nRastejando");
     }
 
     @Override
     public void alimentar() {
-        System.out.println("Comendo vegetais");
+        System.out.printf("\nComendo vegetais");
     }
 
     @Override
     public void emitirSom() {
-        System.out.printf("som de Reptil\n");
+        System.out.printf("\nsom de Reptil\n");
     }
 
 

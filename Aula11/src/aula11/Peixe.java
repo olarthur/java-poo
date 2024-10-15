@@ -6,7 +6,7 @@ public class Peixe extends Animal{
 
 
     public void soltarBolha() {
-        System.out.println("Soltando bolhas");
+        System.out.println("Soltando bolhas\n");
     }
 
 
@@ -21,18 +21,18 @@ public class Peixe extends Animal{
 
     @Override
     public void locomover() {
-        System.out.println("Nadando...");
+        System.out.printf("\nNadando...");
     }
 
 
     @Override
     public void alimentar() {
-        System.out.println("Comendo substancias");
+        System.out.printf("\nComendo substancias");
     }
 
 
     @Override
     public void emitirSom() {
-        System.out.printf("Peixe nao faz som\n");
+        System.out.printf("\nPeixe nao faz som\n");
     }
 }

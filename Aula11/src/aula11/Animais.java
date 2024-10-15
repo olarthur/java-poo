@@ -7,6 +7,7 @@ public class Animais {
         Reptil  r = new Reptil();
         Peixe p = new Peixe();
         Ave a = new Ave();
+        
 
         m.setPeso(85.3f);
         m.setIdade(2);

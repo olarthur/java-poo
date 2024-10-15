@@ -21,13 +21,13 @@ public class Ave extends Animal{
 
     @Override
     public void locomover() {
-        System.out.println("Voando");
+        System.out.printf("\nVoando");
     }
 
 
     @Override
     public void alimentar() {
-        System.out.println("Comendo frutas");
+        System.out.printf("\nComendo frutas");
     }
 
 
