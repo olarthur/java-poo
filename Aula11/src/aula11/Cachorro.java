@@ -7,7 +7,7 @@ public class Cachorro extends Mamifero{
     }
         
     public void abanarRabo() {
-        System.out.printf("Abanando Rabo");
+        System.out.printf("Abanando Rabo\n");
     }
 
     @Override

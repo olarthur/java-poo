@@ -87,7 +87,6 @@ public class Animais {
         ar.locomover();
         ar.alimentar();
         ar.emitirSom();
-        
-        
+    
     }
 }
