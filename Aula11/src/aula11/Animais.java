@@ -48,5 +48,13 @@ public class Animais {
         c.emitirSom();
         c.usarBolsa();
 
+        d.setPeso(3.3f);
+        d.setIdade(4);
+        d.setMembros(4);
+        d.locomover();
+        d.alimentar();
+        d.emitirSom();
+        d.abanarRabo();
+        
     }
 }

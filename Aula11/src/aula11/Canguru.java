@@ -3,7 +3,7 @@ package aula11;
 public class Canguru extends Mamifero{
 
     public void usarBolsa() {
-        System.out.printf("Usando bolsa");
+        System.out.printf("Usando bolsa\n");
     }
 
     @Override

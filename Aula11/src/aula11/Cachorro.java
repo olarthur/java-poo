@@ -9,4 +9,9 @@ public class Cachorro extends Mamifero{
     public void abanarRabo() {
         System.out.printf("Abanando rabo");
     }
+
+    @Override
+    public void emitirSom() {
+        System.out.println("\nLatindo..");
+    }
 }
