@@ -31,4 +31,10 @@ public class Frank extends Pessoa{
         this.totAssistido = totAssistido;
     }
 
+
+    @Override
+    public String toString() {
+        return "Frank [" + super.toString() + "\n[login = " + login + ", totAssistido = " + totAssistido + "]";
+    }
+
 }
