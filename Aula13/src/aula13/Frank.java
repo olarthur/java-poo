@@ -4,7 +4,14 @@ public class Frank extends Pessoa{
 
     private String login;
     private double totAssistido;
-
+    
+    
+    public Frank(String nome, int idade, String sexo, String login) {
+        super(nome, idade, sexo);
+        this.login = login;
+        this.totAssistido = 0;
+    }
+    
 
     public void viuMaisUm() {
 

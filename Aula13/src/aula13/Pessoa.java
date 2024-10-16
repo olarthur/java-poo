@@ -1,18 +1,26 @@
 package aula13;
 
-public class Pessoa {
+public abstract class Pessoa {
 
     protected String nome;
     protected int idade;
     protected String sexo;
-    protected String experiencia;
+    protected float experiencia;
     
+
+    public Pessoa(String nome, int idade, String sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.experiencia = 0;
+    }
+
 
     protected void ganharExp() {
         
     }
 
-    
+
     public String getNome() {
         return nome;
     }
@@ -37,12 +45,18 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-    public String getExperiencia() {
+    public float getExperiencia() {
         return experiencia;
     }
 
-    public void setExperiencia(String experiencia) {
+    public void setExperiencia(float experiencia) {
         this.experiencia = experiencia;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Pessoa [nome = " + nome + ", idade = " + idade + ", sexo = " + sexo + ", experiencia = " + experiencia + "]";
     }
 
 }
