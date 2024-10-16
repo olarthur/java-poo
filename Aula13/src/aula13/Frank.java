@@ -1,6 +1,6 @@
 package aula13;
 
-public class Frank {
+public class Frank extends Pessoa{
 
     private String login;
     private double totAssistido;
@@ -10,7 +10,7 @@ public class Frank {
 
     }
 
-    
+
     public String getLogin() {
         return login;
     }
@@ -23,6 +23,5 @@ public class Frank {
     public void setTotAssistido(double totAssistido) {
         this.totAssistido = totAssistido;
     }
-
 
 }

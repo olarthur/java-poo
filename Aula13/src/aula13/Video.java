@@ -1,11 +1,12 @@
 package aula13;
 
-public class Video {
+public class Video implements AcoesVideo{
 
     private String titulo;
-    private String avaliacao;
+    private int avaliacao;
     private int views;
     private int curtidas;
+    private boolean reproduzindo;
 
 
     public String getTitulo() {
@@ -16,11 +17,11 @@ public class Video {
         this.titulo = titulo;
     }
 
-    public String getAvaliacao() {
+    public int getAvaliacao() {
         return avaliacao;
     }
 
-    public void setAvaliacao(String avaliacao) {
+    public void setAvaliacao(int avaliacao) {
         this.avaliacao = avaliacao;
     }
 
@@ -38,6 +39,30 @@ public class Video {
 
     public void setCurtidas(int curtidas) {
         this.curtidas = curtidas;
+    }
+
+    public boolean getReproduzindo() {
+        return reproduzindo;
+    }
+
+    public void setReproduzindo(boolean reproduzindo) {
+        this.reproduzindo = reproduzindo;
+    }
+
+    
+    @Override
+    public void play() {
+        
+    }
+
+    @Override
+    public void pause() {
+        
+    }
+
+    @Override
+    public void like() {
+        
     }
 
 }
