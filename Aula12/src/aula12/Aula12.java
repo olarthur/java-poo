@@ -11,5 +11,6 @@ public class Aula12 {
 
         Cachorro c = new Cachorro();
         c.emitirSom();
+        c.reagir("");
     }
 }
