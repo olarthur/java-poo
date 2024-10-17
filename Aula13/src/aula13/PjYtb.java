@@ -14,11 +14,11 @@ public class PjYtb {
         f[1] = new Frank("Homero", 27, "M", "Odisseia");
 
 
+        Vizualizacao vz = new Vizualizacao(f[0], v[1]);
 
-        System.out.println(f[0].toString());
-        
-        
-        System.out.println(v[0].toString());
+        System.out.println(vz.toString());
+        //System.out.println(f[0].toString());
+        //System.out.println(v[0].toString());
 
     }
     
